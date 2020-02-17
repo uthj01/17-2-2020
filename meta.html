@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>meta char</title>
+</head>
+<body>
+
+</body>
+<script>
+	var str="Give 100%";
+	var patt=/\w/g;
+	var m=str.match(patt);
+	console.log(m);
+
+
+	var str="Give 100%!";
+	var patt=/\W/g;
+	var m=str.match(patt);
+	console.log(m);
+
+
+	var str="Give 100%";
+	var patt=/\d/g;
+	var m=str.match(patt);
+	console.log(m);
+
+	var str="Give 100%!";
+	var patt=/\D/g;
+	var m=str.match(patt);
+	console.log(m);
+
+
+	
+
+
+
+
+
+</script>
+</html>

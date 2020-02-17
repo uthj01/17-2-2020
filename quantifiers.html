@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quantifiers</title>
+</head>
+<body>
+
+</body>
+<script>
+	var str="Hello Hai hello Hai";
+	var patt=/o+/g;
+	var m=str.match(patt);
+	console.log(m);
+
+
+	var str="Hello Hai hello Hai";
+	var patt=/\lo*/g;
+	var m=str.match(patt);
+	console.log(m);
+
+
+	var str="1,100,1000";
+	var patt=/10?/g;
+	var m=str.match(patt);
+	console.log(m);
+
+	var str="Is this this";
+	var patt=/^Is/g;
+	var m=str.match(patt);
+	console.log(m);
+
+
+	var str="Is this all there is";
+	var patt=/is(?= all)/g;
+	var m=str.match(patt);
+	console.log(m);
+
+
+	var str="Is this all there is";
+	var patt=/Is(?!all)/g;
+	var m=str.match(patt);
+	console.log(m);  
+
+
+
+
+
+
+	</script>
+</html>

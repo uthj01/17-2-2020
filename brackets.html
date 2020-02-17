@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>brackets</title>
+</head>
+<body>
+
+</body>
+<script>
+	var str="Hey Hi Hello";
+	var pattr=/[H]/g;
+	var m=str.match(pattr);
+	console.log(m);
+
+	var str="kanna kopi kuresh";
+	var pattr=/[^K]/g;
+	var m=str.match(pattr);
+	console.log(m);
+
+	var str="123456789";
+	var pattr=/[1-5]/g;
+	var m=str.match(pattr);
+	console.log(m);
+
+
+	var str="123456789";
+	var pattr=/[^1-5]/g;
+	var m=str.match(pattr);
+	console.log(m);
+
+
+	var str="re,gren,red,green,gr,gree";
+	var pattr=/(red|green)/g;
+	var m=str.match(pattr);
+	console.log(m);
+
+
+
+
+
+	</script>
+</html>
